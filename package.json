@@ -1,0 +1,40 @@
+{
+  "name": "kakaomap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development webpack serve --config ./scripts/webpack.config.js --progress --mode development",
+    "build": "cross-env NODE_ENV=production webpack --config ./scripts/webpack.config.js --progress --mode production",
+    "tsc": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/preset-typescript": "^7.22.5",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@types/node": "^20.3.2",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "dotenv": "^16.3.1",
+    "kakao.maps.d.ts": "^0.1.38",
+    "mini-css-extract-plugin": "^2.7.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.3",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
